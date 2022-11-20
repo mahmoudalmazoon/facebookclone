@@ -1,0 +1,195 @@
+.PostCard{
+    padding: 10px;
+    margin: 10px 0;
+}
+.PostTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PostInf{
+    display: flex;
+    align-items: center;
+}
+.PostTopDes{
+    margin: 0 5px;
+}
+.PostTopDes h4{
+    margin: 0;
+    padding: 0;
+}
+.PostTopDes p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.Postdes{
+    margin: 10px 0;
+}
+.Postimage{
+    width: 100%;
+    max-height: 400px;
+}
+.PostBotttomAction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.postBottomLeft{
+    display: flex;
+    align-items: center;
+}
+.likeIcon{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 3px;
+    transition: all .5s;
+}
+.Scale{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 3px;
+    transition: all .5s;
+    transform: scale(1.2);
+    background-color: beige;
+}
+.likeIcon:hover{
+    transform: scale(1.2)
+}
+.postLikeCounter{
+    font-size: 15px;
+    color: rgb(116, 116, 116);
+    margin-left: 5px;
+}
+
+.PostBotttomComment{
+    display: flex;
+    align-items: center;
+}
+.postCommentText{
+    font-size: 15px;
+    color: rgb(116, 116, 116);
+    margin-left: 5px;
+}
+.PostBotttomComment input {
+    width: 90%;
+    border:none;
+    background-color: rgb(221, 219, 219);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.PostBotttomComment input:focus{
+    outline: none;
+}
+.AvatarComments{
+    width: 30px;
+    height: 30px;
+}
+.CommentButton{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 1s;
+    color: #0a82ec;
+    padding: 3px;
+}
+.CommentButton:hover{
+    color: white ;
+    background-color: #0a82ec !important;
+}
+.CommentsList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height:100px;
+    overflow-y: scroll;
+}
+.CommentTopDes{
+    display: flex;
+    align-items: center;
+}
+
+.commentinfo h5{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #0a82ec;
+}
+.commentinfo p{
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+.Comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px auto;
+    padding: 5px;
+    background-color: rgb(209, 209, 209)!important;
+    height: 40px;
+    overflow-y: auto;
+}
+.CommentMessage{
+    color: rgb(32, 32, 32);
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.UpdateOverLay{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:rgb(162, 187, 211);
+    opacity: .5;
+    z-index: 100000;
+    width: 100vw;
+    height: 100vh;
+}
+.UpdateComponent{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1 !important;
+    z-index: 1000000 !important;
+}
+@media (max-width:768px) {
+    .Avatarpost{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .PostTopDes h4{
+        font-size: 11px;
+    }
+    .PostTopDes p{
+        font-size: 8px;
+    }
+    .postCommentText{
+        font-size: 8px;
+    }
+    .commentinfo h5{
+        font-size: 10px;
+    }
+    .commentinfo p{
+        font-size: 8px;
+    }
+    .Comment{
+        height: 30px;
+        overflow-y: scroll;
+    }
+    .CommentMessage{
+        color: rgb(32, 32, 32);
+        font-size: 10px;
+    }
+    .AvatarComments{
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+}

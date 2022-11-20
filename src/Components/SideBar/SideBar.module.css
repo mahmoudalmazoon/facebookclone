@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+.SideBar {
+  flex: 2;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+  padding:10px 20px;
+}
+::-webkit-scrollbar{
+  width:7px;
+}
+::-webkit-scrollbar-track{
+  background-color: #ebebeb;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #0a82ec;
+  border-radius: 50px;
+}
+.IconContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.IconContainer p {
+  margin: 0 5px;
+}
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Button {
+  cursor: pointer;
+  background-color: #0a82ec;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px 0 ;
+  border: 1px solid #0a82ec ;
+  border-radius: 5px;
+  transition: all .5s;
+}
+.Button:hover{
+    color:#0a82ec;
+    background-color: white;
+}
+.hr{
+  color: #0a82ec;
+  width: 90%;
+    margin: auto;
+}
+.ActiveFriendsHide{
+  margin: 5px 0;
+}
+.ActiveFriends{
+    padding: 5px 0;
+}
+@media (max-width:768px) {
+  .SideBar{
+    display: none;
+  }
+  .Button{
+    font-size: 12px;
+  }
+  .ActiveFriendsHide{
+    font-size: 11px;
+    text-align: center;
+  }
+}

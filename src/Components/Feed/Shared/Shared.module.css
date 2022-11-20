@@ -1,0 +1,94 @@
+.Card{
+    padding: 10px;
+}
+.shareTop{
+    display: flex;
+    align-items: center;
+}
+.shareTop input {
+    border: none;
+    width: 70%;
+    margin-left: 5px;
+    padding: 5px;
+}
+.shareTop input:focus {
+    outline: none;
+}
+.hr{
+    width: 80%;
+    margin: 5px auto;
+    color: #0a82ec;
+}
+.shareBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shareOptions{
+    display: flex;
+    align-items: center;
+}
+.shareOption{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 10px;
+    padding:3px;
+}
+.shareOption:hover{
+    background-color: #9192921f;
+}
+.shareButton{
+    color: white;
+    background-color: #0a82ec;
+    cursor: pointer;
+    border: 1px solid #0a82ec;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .8s;
+    display: flex;
+    align-items: center;
+}
+.SharePostContainer{
+    position: relative;
+}
+.SharePostContainer button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 100%;
+    transform: translateX(-100%);
+    color: white;
+    background-color: rgb(233, 17, 17);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0 0 0 5px;
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    .shareTopAvatar{
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .shareTop input{
+        font-size: 9px;
+        width: 100%;
+    }
+    .shareOption span{
+        display: none;
+    }
+    .shareButton{
+        font-size: 8px;
+        padding: 0;
+
+    }
+    .shareButton span {
+    display: none;
+    }
+}

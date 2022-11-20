@@ -1,0 +1,19 @@
+.Friend{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.FriendName{
+    margin-left: 5px;
+}
+@media (max-width:768px) {
+    .Avatar{
+        width: 24px !important;
+        height: 24px !important;
+    }
+    .FriendName{
+        margin: 0;
+        font-size: 10px;
+    }
+
+}

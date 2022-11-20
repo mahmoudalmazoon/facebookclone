@@ -1,0 +1,32 @@
+.RightBar{
+    flex: 2;
+    width: 100%;
+    margin-left: 2px;
+}
+.FriendsList{
+    list-style: none;
+    max-height: 40vh;
+    margin: 5px 0;
+    padding: 0;
+    overflow: auto;
+}
+.Advertisement{
+    width: 100%;
+    border-radius: 20px;
+    margin: 5px 0;
+}
+.title{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:768px) {
+    .title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .Advertisement{
+        border-radius: 3px;
+        margin: 1px 0
+    }
+}

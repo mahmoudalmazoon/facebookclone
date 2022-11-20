@@ -1,0 +1,19 @@
+.ActiveFriend{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.ActiveFriendName{
+    margin-left: 5px;
+}
+@media (max-width:768px) {
+    .ActiveFriendName{
+        font-size: 10px;
+        margin: 0;
+        word-break: break-all;
+    }
+    .Avatar{
+        width: 24px !important;
+        height: 24px !important;
+    }
+}

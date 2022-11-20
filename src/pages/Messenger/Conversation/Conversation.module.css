@@ -1,0 +1,11 @@
+.friendConversation{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 ;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.friendConversation:hover{
+    background-color: rgb(231, 226, 226);
+}
